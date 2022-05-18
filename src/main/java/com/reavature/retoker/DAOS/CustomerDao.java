@@ -7,7 +7,7 @@ import com.reavature.retoker.EXCEPTIONS.*;
 
 public class CustomerDao {
 
-    public class CustomerDao implements Crudable<Customer> {
+    private class CustomerDao implements Crudable<Customer> {
 
         @Override
         public Customer create(Customer newCustomer) {

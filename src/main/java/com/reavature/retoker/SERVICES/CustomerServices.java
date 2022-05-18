@@ -3,11 +3,10 @@ package com.reavature.retoker.SERVICES;
 import java.io.IOException;
 import com.reavature.retoker.SERVICES.*;
 import com.reavature.retoker.DAOS.*;
+import com.reavature.retoker.UTILITY.LOGGING.logger;
 
 
-public class CustomerServices {
-
-    public class CustomerServices implements Serviceable<CustomerServices> {
+    public class CustomerServices implements Serviceable<Services> {
 
         private CustomerDao customerDao;
         private Logger logger = Logger.getLogger();
@@ -110,32 +109,32 @@ public class CustomerServices {
             }
 
         @Override
-        public User update(User updatedObject) {
+        public Customer update(Customer updatedObject) {
             return null;
         }
 
         @Override
-        public boolean delete(String id) {
+        public boolean delete(String email password) {
             return false;
         }
 
         @Override
-        public boolean validateInput(User object) {
+        public boolean validateInput(Customer object) {
             return false;
         }
 
 
-        public User readByEmail(String email) throws ResourcePersistanceException {
-            User user = userDao.findByEmail(email);
-            return user;
+        public Customer readByEmail(String email) throws ResourcePersistance{
+                Customer Customer = CustomerDao.findByEmail(email);
+            return Customer;
 
         }
 
-        public User authenticateUser(String email, String userpassword) {
+        public Customer authenticateCustomer(String email, String password) {
             return null;
         }
 
-        public User readbyEmail(String email) {
+        public Customer readbyEmail(String email) {
             return null;
         }
     }

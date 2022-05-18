@@ -4,11 +4,8 @@ public class Customer {
 
     // Encapsulation: variables declared private retrievable via "get and set".--TM
     private String email;
-
     private String firstName;
-
     private String lastName;
-
     private String password;
 
 
@@ -67,7 +64,7 @@ public class Customer {
     }
 
 
-    @Override
+
     public String toString() {
         return "Customer{" +
                 ", email='" + email + '\'' +
@@ -76,8 +73,5 @@ public class Customer {
                 ", password='" + password + '\'' +
                 '}';
     }
-
-
-}
 
 }
