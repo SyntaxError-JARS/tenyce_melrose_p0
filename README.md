@@ -10,15 +10,8 @@ Retoker is a retirement brokerage application with transactions similar to a ban
 Application offers the following USER/CUSTOMER options: LOGIN, CREATE NEW ACCOUNT, VIEW ACCOUNT BALANCE, 
 DEPOSIT FUNDS, WITHDRAW FUNDS, EXIT APP.
 
-Customer/Users can select menu options, input data, and 
+Users can select menu options, input data, and 
 recieve output/response. 
---EXPLAIN PROCESS????   JDBC provides connection to API, which interacts with data
-
-
-DETAILS:
-Here's What the App Can Do & How---
-
-
 
 
 TOOLS USED:
